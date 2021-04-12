@@ -2,4 +2,4 @@
 
 Exercise from the XSEDE Big Data and Machine Learning Workshop. We built a recommendation system using the `pyspark.mllib.ALS` package.
 
-In the python shell, load pyspark using the commend `module load spark`. Then, the file can be run using the `spark -submit spark_recommender.py` commend.
+In the python shell, load pyspark using the commend `module load spark`. Then, the file can be run using the `spark -submit spark_recommender.py` commend if the `spark_recommender.py` file is located in teh current directory.
