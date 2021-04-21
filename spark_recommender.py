@@ -13,7 +13,7 @@ from pyspark.mllib.recommendation import ALS
 sc = SparkContext()
 sc.setLogLevel('ERROR') # Print only error messages; suppress info messages
 
-# Read rating file into Resilient Distributed Dataset (RDD)
+# Read rating file as Resilient Distributed Dataset (RDD)
 ratings_raw = sc.textFile('ratings.csv')
 
 # Parse lines into tuple (user_id, product_id, rating)
@@ -83,7 +83,7 @@ new_user = [
      (0,478,5),
      (0,248,4)
     ]
-# Put the new user data into RDD
+# Put the new user data as RDD
 new_user_rdd = sc.parallelize(new_user)
 
 # Add the new user data to ratings
